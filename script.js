@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newIndex = 0;
         }
         showTestimonial(newIndex);
-    }, 5000);
+    }, 7000);
     
     // Consultation form submission
     const consultationForm = document.getElementById('consultationForm');
