@@ -312,7 +312,7 @@ nav ul li a:hover::after {
 
 /* Cases section */
 .cases {
-    padding: 100px 0;
+    padding: 120px 0;
     background-color: var(--light-gray);
     position: relative;
     overflow: hidden;
@@ -334,10 +334,21 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cases-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .case-card {
@@ -377,6 +388,7 @@ nav ul li a:hover::after {
 .case-image {
     flex: 1;
     overflow: hidden;
+    position: relative;
 }
 
 .case-image img {
@@ -418,6 +430,8 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
     color: var(--text-light);
     transition: var(--transition);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .case-card:hover .case-content p {
@@ -439,12 +453,58 @@ nav ul li a:hover::after {
 
 .case-result i {
     margin-right: 8px;
+    font-size: 0.9rem;
 }
 
 .case-card:hover .case-result {
     background-color: var(--white);
     color: var(--accent-color);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cases-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cases-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cases {
+        padding: 80px 0;
+    }
+    
+    .cases-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .case-card {
+        height: auto;
+        max-height: 500px;
+    }
+    
+    .case-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    
+    .cases-cta p {
+        font-size: 1rem;
+    }
 }
 
 /* Blog section */
